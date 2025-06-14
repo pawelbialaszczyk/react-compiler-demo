@@ -3,17 +3,17 @@ import { getPrimeNumbers } from './prime-numbers';
 import './App.css';
 
 const IncrementButton = ({ onClick }) => (
-  <button onClick={onClick}>Increment count</button>
+  <button onClick={onClick}>Increment count!</button>
 );
 
 const DummyComponent = () => (
-  <div>Dummy</div>
+  <div className="dummy">Dummy</div>
 );
 
 const PrimeNumbers = ({ primeNumbers }) => (
   <div>
     <DummyComponent />
-    <p>{primeNumbers.join(', ')}</p>
+    <p className="prime-numbers">{primeNumbers.join(', ')}</p>
   </div>
 );
 
